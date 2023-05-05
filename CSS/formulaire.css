@@ -1,0 +1,283 @@
+.fa-magnifying-glass {
+  display: none;
+}
+/**FORMULAIRE_BOOKI*/
+.formulaire_booki {
+  display: block;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--white);
+  margin-bottom: 20px;
+}
+.titre_para_formulaire {
+  display: block;
+  margin-bottom: 10px;
+}
+.titre_para_formulaire h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  width: 100%;
+}
+.titre_para_formulaire p {
+  font-weight: 500;
+  font-size: 16px;
+}
+/*Champ_de_recherche*/
+input[type="text"] {
+  width: 235px;
+  height: 50px;
+  font-size: 15px;
+  padding-left: 10px;
+  border: none;
+  font-weight: bold;
+  border-top: solid 1px var(--grey_hb_pop_footer_pt-location);
+  border-bottom: solid 1px var(--grey_hb_pop_footer_pt-location);
+}
+.point_localisation_formulaire {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: medium;
+  background-color: var(--grey_hb_pop_footer_pt-location);
+  width: 50px;
+  height: 50px;
+}
+.fa-location-dot {
+  font-size: 15px;
+  margin-top: 19px;
+  margin-left: 21px;
+  color: var(--black);
+}
+input::placeholder {
+  color: var(--black);
+}
+.champ_recherche_formulaire {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 40px;
+  height: 50px;
+}
+.champ_recherche_formulaire button {
+  font-size: 16px;
+  border: solid var(--btn_search-icon-rectangle--blue);
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--btn_search-icon-rectangle--blue);
+  color: var(--white);
+  width: 120px;
+  height: 50px;
+}
+/*Champ_filtres+boutons*/
+.bloc_filtres_formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 16px;
+  gap: 20px;
+  background-color: var(--white);
+}
+.bouton_radius_formulaire {
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 8px;
+  height: 50px;
+  border: solid 2px var(--formulaire);
+  text-decoration: none;
+  border-radius: 50px;
+  background: var(--white);
+}
+.bouton_radius_formulaire:hover {
+  background: var(--btn-filter-rounded-hover-blue-light);
+}
+.txt_bouton_formulaire {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 16px;
+  color: var(--black);
+  padding: 0 2px 0 6px;
+}
+/*Champ_info*/
+.bloc_info_formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+.bloc_info_formulaire p {
+  font-size: 16px;
+}
+.fa-solid.fa-info {
+  border: solid 0.1px var(--formulaire);
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+}
+
+/**************RESPONSIVES 425***********/
+@media screen and (max-width: 425px) {
+  .fa-magnifying-glass {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    background: var(--btn_search-icon-rectangle--blue);
+    font-size: 17px;
+    color: var(--white);
+  }
+  .formulaire_booki {
+    display: block;
+    justify-content: center;
+    background-color: var(--white);
+    margin-top: 10px;
+    padding: 0 10px;
+    width: 100%;
+  }
+  .champ_recherche_formulaire button {
+    display: none;
+  }
+  .titre_para_formulaire {
+    width: 95%;
+    margin: auto;
+  }
+  .titre_para_formulaire h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+  .titre_para_formulaire p {
+    font-size: 16px;
+  }
+
+  /*Champ_filtres+boutons*/
+  .bloc_filtres_formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 10px;
+    width: 100%;
+    font-size: 18px;
+    background: var(--white);
+  }
+  .bouton_radius_formulaire {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    border: solid 2px var(--formulaire);
+    text-decoration: none;
+    border-radius: 50px;
+    background: var(--white);
+  }
+  .bouton_radius_formulaire:hover {
+    background: var(--btn-filter-rounded-hover-blue-light);
+  }
+  .txt_bouton_formulaire {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 17px;
+    color: var(--black);
+  }
+  .champ_recherche_formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 66px;
+    margin-top: 50px;
+    margin: 20px auto;
+  }
+  .bloc_filtres_formulaire {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 20px 50px 50px;
+  }
+  .titre_filtres_formulaire h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    width: 88%;
+    margin: auto;
+  }
+  .btn0 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .btn3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .txt_bouton_formulaire {
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--black);
+  }
+  .bouton_radius_formulaire {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 0px;
+    border: solid 2px var(--formulaire);
+    width: 88%;
+    text-decoration: none;
+    border-radius: 50px;
+    background: var(--white);
+  }
+  .bouton_radius_formulaire:hover {
+    background: linear-gradient(0deg, #ffdede00, #ffdede00);
+  }
+  input[type="text"] {
+    width: 65%;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    border-top: solid 1px var(--grey_hb_pop_footer_pt-location);
+    border-bottom: solid 1px var(--grey_hb_pop_footer_pt-location);
+  }
+  .point_localisation_formulaire {
+    background-color: var(--grey_hb_pop_footer_pt-location);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    font-size: medium;
+    color: var(--black);
+    width: 50px;
+    margin-left: 0;
+  }
+  /*Champ_info*/
+  .bloc_info_formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .bloc_info_formulaire p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+  }
+  .fa-solid.fa-info {
+    border: solid 0.1px var(--box_shadow);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+  }
+}

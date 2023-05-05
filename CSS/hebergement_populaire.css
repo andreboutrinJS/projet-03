@@ -1,0 +1,418 @@
+.section_hebergements_populaires {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+#bloc_card_hb_marseille {
+width: 60%;
+  display: grid;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: var(--grey_hb_pop_footer_pt-location);
+}
+.card_hb {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 199px;
+  border: solid 5px var(--white);
+  border-radius: 20px;
+  background-color: var(--white);
+  box-shadow:var(--box_shadow);
+}
+
+.txt_etoile{
+height: 72px;
+width: 100%;
+}
+.card_pop {
+
+position: relative;
+  border: solid 5px var(--white);
+  border-radius: 20px;
+  background-color: var(--white);
+  height: 144px;
+  margin-top: 15px;
+  box-shadow:var(--box_shadow);
+  box-sizing: border-box;
+}
+.bloc_txt_para_hebergement {
+  margin-bottom: 2px;
+}
+.bloc_txt_para_hebergement h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.bloc_txt_para_hebergement p {
+  font-size: 14px;
+}
+
+.etoile_hb {
+  margin-top: 5px;
+  height: 50px;
+  position: absolute;
+  bottom: -30px;
+  margin-left: 10px;
+}
+
+.images_hb {
+  object-fit: cover;
+  width:100%;
+  height: 116px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: var(--white);
+}
+.titre_hebergement {
+  grid-column: 1/4;
+  width: 400px;
+}
+.titre_hebergement h2 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+.txt_afficher_plus {
+  grid-column: 1/4;
+}
+.txt_afficher_plus h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.titre_populaire_graphique {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+/* graphique */
+.fa-chart-line {
+  font-size: 18px;
+  height: 16px;
+}
+.txt_etoile_populaire {
+position: absolute;
+  box-sizing: border-box;
+  width: 57%;
+  height: 50px;
+  left:37%;
+  top: 10px;
+}
+.etoile_pop {
+ top:93px;
+  width: 60%;
+  height: 30px;
+  position: absolute;
+}
+
+.bloc_card_populaire {
+  display: block;
+  flex-wrap: wrap;
+  padding:0 20px;
+  width: 33%;
+  border-radius: 20px;
+  background-color: var(--grey_hb_pop_footer_pt-location);
+}
+.box_card_pop {
+  display:block;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.images_pop {
+  object-fit: cover;
+  width:34%;
+  height: 133px;
+  border-radius: 15px 0px 0px 15px;
+}
+.box_pop{
+display: block;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bloc_txt_para_populaire{
+width: 100%;
+
+}
+
+.bloc_txt_para_populaire h3 {
+  font-size: 15px;
+  width:100%;
+  box-sizing: border-box;
+}
+.bloc_txt_para_populaire p {
+  font-size: 14px;
+  position: absolute;
+  width:100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width:768px) {
+
+   .section_hebergements_populaires {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#bloc_card_hb_marseille {
+  width:100%;
+  display: grid;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--grey_hb_pop_footer_pt-location);
+}
+
+
+
+.bloc_card_populaire {
+  display: block;
+  flex-wrap: wrap;
+  padding:0 0;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  background-color: var(--grey_hb_pop_footer_pt-location);
+}
+
+
+.box_card_pop {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.card_pop {
+  border: solid;
+  border: solid 5px var(--white);
+  border-radius: 20px;
+  background-color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 144px;
+  margin: 6px;
+  box-shadow:var(--box_shadow);
+  box-sizing: border-box;
+}
+
+.images_pop {
+  object-fit: cover;
+  width:45%;
+  height: 133px;
+  border-radius: 15px 0px 0px 15px;
+}
+.etoile_pop {
+display: flex;
+flex-wrap: wrap;
+top: 103px;
+  width:100%;
+  height: 30px;
+  position: absolute;
+}
+
+.box_pop{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.bloc_txt_para_populaire {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.titre_populaire_graphique {
+  width:95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  
+}
+.bloc_txt_para_populaire p {
+  font-size: 11px;
+  width:67%;
+top: 56px;
+  box-sizing: border-box;
+  display: inline;
+  flex-wrap: wrap;
+}
+
+
+.bloc_txt_para_populaire h3 {
+  font-size: 14px;
+  width:72%;
+  box-sizing: border-box;
+}
+.txt_etoile_populaire {
+  position: absolute;
+  box-sizing: border-box;
+  width: 62%;
+  height:100px;
+ margin-left: 20px;
+
+}
+
+} 
+
+
+/*********RESPONSIVES***HEBERGEMENT-POPULAIRE**425PX*/
+@media screen and (max-width: 425px) {
+
+  
+  .box_pop {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+  .txt_etoile_populaire {
+ margin-left: -5px;
+   height: 100%;
+   width: 65%;
+    box-sizing: border-box;
+  }
+  .section_hebergements_populaires {
+    width: 100%;
+    display:flex;
+    flex-direction: column-reverse;
+    background-color: var(--white);
+  }
+  
+ 
+
+  .images_hb {
+    object-fit: cover;
+    width: 100%;
+    height: 144px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--white);
+  }
+  .card_hb {
+    position: relative;
+    width:100%;
+    height: 218px;
+    border: solid 5px var(--white);
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow:var(--box_shadow);
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .card_pop {
+    position: relative;
+    border: solid 5px var(--white);
+    border-radius: 20px;
+    background-color: var(--white);
+    display: flex;
+    width: 100%;
+    height: 171px;
+    box-shadow:var(--box_shadow);
+    margin-top:5px;
+    box-sizing: border-box;
+  }
+  .images_pop {
+    object-fit: cover;
+    width:35%;
+    height: 160px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  
+  
+
+.images_hb {
+    object-fit: cover;
+    width: 100%;
+    height: 144px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--white);
+}
+  
+
+  #bloc_card_hb_marseille {
+    display: block;
+    width: 100%;
+    border-radius: 0px;
+    background-color: var(--white);
+padding: 0 10px;
+  }
+  .bloc_card_populaire {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0px;
+    background-color: var(--grey_hb_pop_footer_pt-location);
+    margin-top: 0px;
+  }
+
+  .titre_populaire_graphique {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .titre_populaire_graphique h2 {
+    width:90%;
+    display: flex;
+    margin: auto;
+    font-size: 22px;
+    justify-content: space-between;
+  }
+
+ 
+  .titre_hebergement {
+    grid-column: 1/4;
+    width:100%;
+    margin: auto;
+  }
+
+  .titre_hebergement h2 {
+    font-size: 22px;
+  margin-bottom: 10px;
+  }
+
+  .bloc_txt_para_populaire {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .txt_afficher_plus h4 {
+    display: none;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .etoile_hb {
+    margin-top: 5px;
+    height: 50px;
+    position: absolute;
+    bottom: -30px;
+    margin-left: 10px;
+  }
+
+
+  
+  
+}
